@@ -11,4 +11,6 @@ end
 Motion::Project::App.setup do |app|
   app.name = "Pong"
   app.device_family = :ipad
+  app.frameworks += ["SpriteKit"]
+  app.interface_orientations = [:landscape_left, :landscape_right]
 end
